@@ -37,9 +37,9 @@ Place the information of the files to be installed in the 'FilesToInstall' direc
 
 ## 3.	Configure the UI in the 'skin' directory
 
-- install.xml This is a master script.
+- install.xml: This is a master script.
 
-- configpage.xml Configures the first UI displayed after opening the installation package, also used for selecting installation paths and other options.
+- configpage.xml: Configures the first UI displayed after opening the installation package, also used for selecting installation paths and other options.
 
 - licensepage.xml: Configures the UI for displaying the license agreement.
 
