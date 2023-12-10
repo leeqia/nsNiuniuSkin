@@ -9,7 +9,7 @@ This product is a modern and beatiful UI plugin based on DirectUI for NSIS. It i
 ![](./images/uninstalling.png)
 
 
-# Steps to modify the interface, package files, and modify scripts based on the template
+# Steps to modify the UI, package files, and modify scripts based on the template
 ## 1.	Customize the product info
 Modify the xxx_setup.nsi file under the corresponding project directory in the SetupScripts directory: 
 ```
@@ -35,27 +35,27 @@ Modify the xxx_setup.nsi file under the corresponding project directory in the S
 ## 2.	Copy the files which need to be packaged
 Place the information of the files to be installed in the 'FilesToInstall' directory; the packaging script will compress and package this directory (including multiple levels of subdirectories).
 
-## 3.	Configure the interface in the 'skin' directory under the corresponding project directory in SetupScripts
+## 3.	Configure the UI in the 'skin' directory
 
 - install.xml This is a master script.
 
-- configpage.xml Configures the first interface displayed after opening the installation package, also used for selecting installation paths and other options.
+- configpage.xml Configures the first UI displayed after opening the installation package, also used for selecting installation paths and other options.
 
-- licensepage.xml: Configures the interface for displaying the license agreement.
+- licensepage.xml: Configures the UI for displaying the license agreement.
 
-- installingpage.xml: Interface during the installation process.
+- installingpage.xml: UI during the installation process.
 
-- finishpage.xml: Interface displayed upon completion of the installation.
+- finishpage.xml: UI displayed upon completion of the installation.
 
-- uninstallpage.xml: Uninstallation entry interface.
+- uninstallpage.xml: Uninstallation entry UI.
 
-- uninstallingpage.xml: Interface during the uninstallation process.
+- uninstallingpage.xml: UI during the uninstallation process.
 
-- uninstallfinishpage.xml: Interface displayed upon completion of the uninstallation.
+- uninstallfinishpage.xml: UI displayed upon completion of the uninstallation.
 
 - msgBox.xml: Secondary popup window.
 
-The "images" subdirectory is used to store the image information required for the interfaces.
+The "images" subdirectory is used to store the image information required for the UIs.
 ## 4.	Modify the scripts
 If there are specific installation features that require modification, please go to the corresponding project directory under SetupScripts and modify the file xxx_setup.nsh.
 
@@ -73,16 +73,16 @@ If there are specific installation features that require modification, please go
 ## 6.	Other Notes/Points to Consider 
 - The currently configured NSIS is the Unicode version, so Chinese characters displayed in the console may appear as question marks. You can ignore it.
 ```
-@rem If you want to debug errors, please use the following script, which will open the compilation interface (Chinese characters will appear as question marks in the command-line interface).
-	".\NSIS\makensisw.exe" xxx
+@rem If you want to debug errors, please use the following script, which will open the compilation UI (Chinese characters will appear as question marks in the command-line UI).
+".\NSIS\makensisw.exe" xxx
 ```
 - The NSI file contains information related to the installation configuration. The actual installation logic is in commonfunc.nsh and the NSH file that accompanies the NSI file.
 
-- If you have interfaces that you don't understand, please refer to the examples and documentation.
+- If you have UIs that you don't understand, please refer to the examples and documentation.
 
 - All NSI and NSH files for NSIS need to be in Unicode or UTF-8 encoding.
 
-- For the ShowMsgBox interface, an additional parameter has been added to specify the style file used for the popup window. For example:
+- For the ShowMsgBox UI, an additional parameter has been added to specify the style file used for the popup window. For example:
 ```
 nsNiuniuSkin::ShowMsgBox "notice title" "notice message." 0 "msgBox2.xml"
 ```
