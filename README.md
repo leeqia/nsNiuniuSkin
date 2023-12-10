@@ -82,14 +82,15 @@ If there are specific installation features that require modification, please go
 - For the ShowMsgBox interface, an additional parameter has been added to specify the style file used for the popup window. For example:
 ```
 nsNiuniuSkin::ShowMsgBox "notice title" "notice message." 0 "msgBox2.xml"
-This will use the style described in msgBox2.xml to display the window, facilitating personalized customization of the popup message box.
 ```
+This will use the style described in msgBox2.xml to display the window, facilitating personalized customization of the popup message box.
+
 - To use an RTF file as the license agreement file, simply change the agreement file to RTF (refer to the Nim example).
 
 ## 7.	New Version
 Our latest version has incorporated the following features, significantly reducing the time spent in the installation package creation process while ensuring the delivery of higher-quality installation packages:
 
-- Multilingual Support
+- Multi-language Support
 - High-DPI Support
 - Silent Installation
 - Upgrade Installation
@@ -99,6 +100,7 @@ Our latest version has incorporated the following features, significantly reduci
 - Automatic Signing of Installation Package and Uninstaller to Prevent False Positives
 - Various Exquisite Templates for Quick Application
 - Visual Configuration Wizard, No More Worries About Configuration Issues
+- More templates
 
 
 More information, please visit:
