@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Windows>
+<!-- 完成 -->
+ <VerticalLayout >
+	<VerticalLayout padding="0,250,0,0" bkcolor="#FFFFFFFF" >	
+	<Button name="btnRun" padding="160,50,0,0" text="Open" font="2" bkcolor="0xFF3BD02C" textcolor="0xFFFFFFFF"  borderround="4,4" height="50" width="160" />
+	</VerticalLayout>
+ </VerticalLayout>
+</Windows>
