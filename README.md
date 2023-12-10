@@ -1,3 +1,6 @@
+# Introduction
+This product is a modern and beatiful UI plugin based on DirectUI for NSIS. It is compact in size and powerful in functionality. We provide a comprehensive product packaging and release solution that includes UI configuration, installation script, and one-click packaging.
+
 # preview the install windows
 
 ![](./images/config.png)
